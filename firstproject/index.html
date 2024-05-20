@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login Page</title>
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="head">
+               <h1>INTERNSHIPS</h1>
+            </div>
+            <div class="list">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#header">About</a></li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--log in-->
+    <div class="formpage">
+        <form>
+            <div class="login">
+                <h1>LOGIN</h1>
+                <div class="form-control">
+                <label>Username</label>
+                <input type="text" id="Uname">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                <small>Error message</small>
+                </div>
+                <div class="form-control">
+                <label>Email</label>
+                <input type="text" id="email">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                <small>Error message</small>              
+                </div>
+                <div class="form-control">
+                <label>Password</label>
+                <input type="password" id="password">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                <small>Error message</small>
+                </div>
+                <a>Forgot Password ?</a>
+                <button type="submit">Login</button>
+                <a>or Log in with</a>
+                <div class="logingoogle">
+                    <div class="google">
+                        <img src="images/google.png" alt="">
+                        <p>Google</p>
+                    </div>
+                    <div class="google">
+                        <img src="images/facebook.png" alt="">  
+                        <p>Facebook</p>
+                    </div>
+                </div>
+                <div class="sign">
+                    <a href="signup.html">Create  account -></a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('.header ul');
+        hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('slide');
+        });
+        const form = document.querySelector('form');
+    const Uname = document.getElementById('Uname');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        checkInput();
+    });
+
+    function checkInput() {
+        const nameval = Uname.value.trim();
+        const emailval = email.value.trim();
+        const passwordval = password.value.trim();
+
+        if (nameval === "") {
+            setError(Uname, 'Username cannot be blank');
+        } else {
+            setSuccess(Uname);
+        }
+
+        if (emailval === "") {
+            setError(email, 'Email cannot be blank');
+        } else if (!isValidEmail(emailval)) {
+            setError(email, 'Not a valid email');
+        } else {
+            setSuccess(email);
+        }
+
+        if (passwordval === "") {
+            setError(password, 'Password cannot be blank');
+        } else {
+            setSuccess(password);
+        }
+    }
+
+    function setError(input, message) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+        formControl.className = 'form-control error';
+        small.innerText = message;
+    }
+
+    function setSuccess(input) {
+        const formControl = input.parentElement;
+        const small = formControl.querySelector('small');
+        formControl.className = 'form-control success';
+        small.innerText = 'valid';
+    }
+
+    function isValidEmail(email) {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\.,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,})$/i;
+        return re.test(String(email).toLowerCase());
+    }
+    </script>
+</body>
+</html>
