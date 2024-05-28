@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .profile{
+            color: aliceblue;
+            float: left;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px 0 rgba(201, 203, 230, 0.37);
+            border:none;
+            border-radius: 10px;
+            margin:15% 5%;
+            padding:30px 40px;
+        }
+        .profile h1{
+            font-size: 35px;
+            padding: 10px 0;
+        }
+        body{
+            background-image: url("/images/back2.jpg");
+            background-size: cover;
+        }
+        .formpage{
+        margin-top:100px;
+    }
+
+    </style>
+</head>
+<body>
+    {{> navbar}}
+    <div class="profile">
+        <h1>Profile</h1>
+        <h3>Name : {{user.name}}</h3>
+        <h3>Email : {{user.email}}</h3>
+    </div>
+</body>
+</html>

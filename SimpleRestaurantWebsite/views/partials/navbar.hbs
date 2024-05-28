@@ -1,0 +1,27 @@
+<header>
+        <div class="header">
+            <div class="head">
+               <h1>Masala Magic</h1>
+            </div>
+            <div class="list">
+                    <ul>
+                        {{#if user}}
+                         <li>Find Store</li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <li><a href="/" >Home</a></li>
+                        <li><a href="/profile">profile</a></li>
+                        <li><a href="/auth/logout">logout</a></li>
+                        {{else}}
+                        <div class="icon">
+                        <li>Find Store</li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <li><a href="/" >Home</a></li>
+                        <li><a href="/login">Log in</a></li>
+                        <li><a href="/signup">Register</a></li>
+                        {{/if}}
+                    </ul>
+            </div>
+        </div>
+    </header>

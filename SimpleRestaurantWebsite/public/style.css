@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family:'Poppins',sans-serif;
+}
+.header {
+    color: white;
+    display: flex;
+    position: absolute;
+    padding: 20px 15px;
+    animation:header 1s ease-in-out;
+}
+@keyframes header {
+    0%{
+        transform: translateY(-100%);
+    }
+}
+h1:hover{
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: 1s;
+}
+.header li:hover{
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: 1s;
+}
+.header i:hover{
+    color: blueviolet;
+}
+.header ul{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header a{
+    text-decoration: none;
+    padding-top: 20px;
+    
+    color: aliceblue;
+}
+.header a:hover{
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: 1s;
+}
+.header li{
+    display: inline-block;
+    padding-left: 30px;
+}
+.header a{
+    display: inline-block;
+    margin-bottom: 17px;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+i{
+    color: aliceblue;
+    padding-left: 8px;
+}
+.container{
+    display: flex;
+    background-image:url("images/back2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding:170px 40px;
+}
+.container .content{
+    padding-right:50%;
+    color: white;
+    animation: content 2s ease-in-out;
+}
+@keyframes content {
+    from{
+    transform: translateX(-20%);
+    }
+}
+.content h1{
+    font-size: 70px;
+}
+.content h1,h2,button{
+    padding-left: 3%;
+}
+.container p{
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 30px;
+    padding-left: 2%;
+    text-shadow: 2px 2px 7px rgb(102, 96, 96);
+}
+.container h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+.container button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    padding: 10px 20px;
+    margin:3% ;
+    color:rgb(241, 220, 31);
+    background: transparent;
+    border:white 2px solid;
+    border-radius: 10px;
+}
+.container button:hover{
+    color: white;
+    border-color: rgb(241, 220, 31);
+    background-color: rgba(255,255,255,0.2);
+}
+.cate{
+    text-align: center;
+    font-size: 30px;
+    margin:20px;
+}
+.menu{
+    display: flex;
+    text-align: center;
+    margin:20px 130px;
+}
+.para{
+    margin-top: 90px;
+    text-align:left;
+    line-height: 35px;
+    
+}
+.menu>div{
+    padding: 10px 73px;
+    color:transparent;
+    width:330px;
+    height: 500px;
+    margin: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 3, 0.5);
+    font-size: 25px;  
+}
+.menu>div h3{
+    color: white;
+    text-shadow:2px 2px 4px black;
+}
+.south{
+    background-image:url("/images/south.jpg");
+}
+.north{
+    background-image:url("/images/north.jpg");
+}
+.chinese{
+    background-image:url("/images/chinese.jpg");
+}
+.south:hover{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.314),rgba(255, 255, 255, 0.314)),url("/images/south.jpg");
+}
+.chinese:hover{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.314),rgba(255, 255, 255, 0.314)),url("/images/chinese.jpg");
+}
+.north:hover{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.314),rgba(255, 255, 255, 0.314)),url("/images/north.jpg");
+}
+.menu>div:hover{
+    text-shadow: 2px 2px 4px black;
+    color: white;
+    scale: 1.03;
+    transition: 1s;
+}
+.menu>div:hover .para{
+    border-left: 2px solid white;
+    padding-left: 10px;
+}
+.offers{
+    display: flex;
+    margin:25px 50px;
+}
+.offers>div{
+    margin:10px 30px;
+    width:300px;
+    height: 300px;
+    background-size: cover;
+
+}
+.offermenu{
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    padding: 50px 0;
+}
+.offer{
+    color:black;
+    font-size: 30px;
+    margin-left:100px;
+}
+.offer:hover{
+    color:white;
+}
+.offers>div{
+    color:white;
+    text-align: left;
+    font-family: fantasy;
+    font:Copperplate;
+    font-size: 35px;
+    padding-top: 25px;
+    background-position: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+.o50{
+    background-image:url("/images/50.jpg");
+}
+.o40{
+    background-image:url("/images/40.jpg");
+}
+.o25{
+    background-image:url("/images/25.jpg");
+}
+.o10{
+    background-image:url("/images/10.jpg");
+}
+.o50:hover{
+    background-image:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("/images/50.jpg");
+}
+.o40:hover{
+    background-image:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("/images/40.jpg");
+}
+.o25:hover{
+    background-image:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("/images/25.jpg");
+}
+.o10:hover{
+    background-image:linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2)),url("/images/10.jpg");
+}
+.offermenu h1{
+    color:black;
+    font-size: 50px;
+    margin-left: 90px;
+}
+.offermenu h1:hover{
+    color:white;
+    text-shadow: 2px 2px 4px black;    
+}
+.formpage{
+    color: white;
+    overflow: hidden;
+    float: left;
+    margin-top: 50px;
+}
+.formpage .content{
+    margin: 5% 10%;
+    width: 100%;
+}
+form{
+    margin: 10px 130px;
+}
+.login{
+    background-color:white;
+    color: black;
+    width:20rem;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 32px 0 rgba(201, 203, 230, 0.37);
+    border-radius: 10px;
+    border:2px solid linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    border-left:1px solid rgba(255,255,255,.3);
+    border-top:1px solid rgba(255,255,255,.3);
+}
+.login h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin:10px;
+}
+label{
+    font-size: 15px;
+    margin-left: 10%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+input{
+    width:80%;
+    margin:5% auto;
+    padding:5px 10px;
+    border-radius:5px;
+    font-weight: bold;
+    background-color: rgb(175, 5, 248,0.2);
+    font-family:'Poppins',sans-serif;
+    font-size: 12px;
+    display: block;
+}
+input:hover{
+    background-color: rgb(175, 5, 248,0.1);
+}
+.login button{
+    width:30%;
+    font-family: 'Poppins',sans-serif;
+    margin:3% auto;
+    font-size: 15px;
+    color: white;
+    padding: 10px 15px;
+    border:1px solid black;
+    border-radius: 10px;
+    box-shadow:2px 2px 4px rgba(3, 0, 0, 0.584);
+    background-image: linear-gradient(90deg, rgba(234, 18, 227), rgba(32, 61, 224));
+}
+.login button:hover{
+    opacity: 0.8;
+}
+.login a{
+    margin-left:14%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sign{
+    padding-bottom: 30px;
+}
+.error{
+    text-align: center;
+    color: red;
+}
+.good{
+    text-align: center;
+    color: lightgreen;
+}
+.footer{
+    background-color: rgb(7, 6, 6);
+    color:rgba(255,255,255,.7);
+    display: flex;
+    padding: 20px 30px;
+    padding-bottom: 50px;
+}
+.footer>div{
+    padding: 30px 50px;
+}
+.footer h3{
+    color: white;
+    padding: 10px 4px;
+}
+.footer li{
+    padding: 10px 0;
+    display: block;
+}
+.footer i:hover{
+    scale: 1.1;
+    color: aqua;
+}
+.main{
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    scale: 1.4;
+    margin-right:40px;
+    margin-top:25px;
+}
+.quote{
+    flex-basis: 40%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-family: fantasy;
+    font:Copperplate;
+}

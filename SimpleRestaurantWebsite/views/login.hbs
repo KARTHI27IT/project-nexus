@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+    body {
+        background-image:url(/images/back2.jpg);
+        background-size: cover;
+    }
+    .login{
+        margin-bottom: 30%;
+    }
+    .formpage{
+        margin-top:100px;
+    }
+
+    </style>
+    
+</head>
+<body>
+    {{> navbar}}
+    <div class="formpage" >
+        <div class="content">
+            <h2>Welcome back to</h2>
+            <h1>Masala magic</h1>
+        </div>
+        <form action="auth/login" method="post">
+            <div class="login">
+                <h1>LOGIN</h1> 
+                {{#if msg}}
+                <p class="{{msg_type}}">{{msg}}</p>
+                {{/if}}        
+                <label>Email</label>
+                <input type="text"  name="email" id="email">
+                <label>Password</label>
+                <input type="password" name="password" id="password">
+                <a>Forgot Password ?</a>
+                <button type="submit">Login</button>
+                <div class="sign">
+                    <a href="/signup">Create  account</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
