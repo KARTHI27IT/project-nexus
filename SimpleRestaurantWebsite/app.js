@@ -1,3 +1,6 @@
+// use mysql for database and create users table with attibutes id(int auto_increment primary key) , name(varchar) ,email (varchar), password (varchar)
+//alter the env file with respect your mysql server
+
 const express = require("express");
 const hbs = require("hbs");
 const path = require("path");
