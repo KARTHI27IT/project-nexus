@@ -40,6 +40,6 @@ app.set("view engine", "hbs");
 
 app.use("/", require("./routes/pages"));
 app.use("/auth", require("./routes/auth"));
-app.listen(3306, () => {
+app.listen(5000, () => {
     console.log("success");
 });
