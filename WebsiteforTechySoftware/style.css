@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h1:hover {
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: 1s;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 4px black;
+    z-index: 100;
+}
+
+#navbar{
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 100;
+    animation:navbar 1s ease-in-out;
+}
+@keyframes navbar{
+    0%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+#navbarSupportedContent a {
+    color: white;
+}
+
+#navbarSupportedContent a:hover {
+    border-bottom: 2px white solid;
+    transition: 1s;
+}
+
+.navbar {
+    padding: 20px;
+}
+
+#navbarSupportedContent button {
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    color: white;
+    font-size: 15px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background: transparent;
+    transition: ease-out 1s;
+}
+
+#navbarSupportedContent button:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 white;
+}
+
+
+.content1 button{
+    margin-left: 20% !important;
+}.content2 button{
+    margin-left: 20% !important;
+}.content3 button{
+    margin-left: 20% !important;
+}
+.content1 {
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(images/Elitecodehubwebdevelopment.jpg);
+    background-size: cover;
+    background-position:calc(7%);
+    height: 100vh;
+    width: 100%;
+    color: white;
+    padding: 10%;
+    font-size: 20px;
+}
+.content2{
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(images/ElitecodehubEcommerce.jpg);
+    background-size: cover;
+    background-position:calc(20%);
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 10%;
+}
+.content3{
+    background-image: url(images/ElitecodehubResponsive.jpg);
+    background-size: cover;
+    background-position:calc(7%);
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    padding: 10%;
+}
+
+
+#about {
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)),url(images/ElitecodehubAbout.jpg);
+    background-size: cover;
+    width:100%;
+    background-position:calc(60%);
+}
+#about p{
+    font-size: 20px !important;
+}
+#about h2{
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+.loginbutton {
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    color: white;
+    font-size: 15px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background: transparent;
+    transition: ease-out 1s;
+}
+
+.loginbutton:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 white;
+}
+
+#services{
+    background:black;
+    padding: 50px 0;
+}
+#services h1{
+    margin-left: 40px;
+    color: white;
+}
+.card {
+    margin:20px 0 20px 25px;
+    width: 90%;
+    border:none !important;
+    height:fit-content;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+.card-body{
+    border-left: 1px solid white !important;
+    border-right: 1px solid white !important;
+    border-bottom: 1px solid white !important; 
+}
+.card{
+    transition: ease-out 0.8s;
+    background: black !important;
+    color: white !important;
+
+}
+.card:hover {
+    color: black !important;
+    scale: 1.05;
+    box-shadow: inset  0 600px 0 0 white;
+}
+#contact{
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 0.8), rgba(32, 61, 224, 0.8));
+    padding: 50px 0;
+}
+#contact h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    padding-top: 20px !important;
+}
+#contact h1:hover{
+    
+    color: black;
+    text-shadow: none;
+}
+#contact button{
+    width:200px !important;
+    margin:10px 50px;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: inset  600px 0 0 0 black;
+    color: white;
+    transition: 1s;
+}
+
+#contact input{
+    width:80% !important;
+    margin:10px 50px;
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)) !important;
+    color: white;
+}
+#contact textarea{
+    width:80% !important;
+    margin:10px 50px;
+    background: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)) !important;
+    color: white;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact img{
+    border: none;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+#footer .main{
+    margin:30px 0;
+}
+#footer{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+#footer li{
+    display: block;
+    padding: 10px 0;
+}
+#footer h3{
+    padding-left: 28px;
+}
+#footer .row>div{
+    padding:10px 0;
+}
+.quote{
+    font-family: fantasy;
+    font:Copperplate;
+    font-weight: bold;
+    font-size: 40px;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-left: -40px !important;
+    text-align: center;
+}
+#footer i{
+    padding: 5px;
+}
+#footer a{
+    color: white;
+}
+#footer i:hover{
+    scale: 1.1;
+    color: aqua;
+}
+@media (max-width:768px) {
+    #navbarSupportedContent a:hover {
+    border-bottom: none;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(234, 18, 227, 1), rgba(32, 61, 224, 1));
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: 1s;
+    }
+    .content1{
+        padding: 90px 10px 40px 50px !important;
+    }
+    .content2{
+        padding: 90px 10px 40px 50px !important;
+    }
+    .content3{
+        padding: 90px 10px 40px 50px !important;
+    }
+}
+
+@media (max-width:426px) {
+    .navbar h1{
+        font-size: 28px;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .content1 button{
+        margin-left: 50px !important;
+    }.content2 button{
+        margin-left: 50px !important;
+    }.content3 button{
+        margin-left: 50px !important;
+    }
+    #footer li{
+        display: block;
+        padding: 10px 0;
+    }
+    .content1 h1{
+        font-size: 30px;
+    }
+    .content2 h1{
+        font-size: 30px;
+    }
+    .content3 h1{
+        font-size: 30px;
+    }
+    #footer{
+        padding: 20px;
+    }
+}
